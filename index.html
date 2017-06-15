@@ -21,9 +21,27 @@
     }
 }
 
+.bg-fade-photo:after {
+  background: black;
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity .15s ease-out;
+  width: 100%;
+}
+
+.bg-fade-photo:hover:after {
+  opacity: 1;
+}
+
 
 </style>
-<body class="avenir fw6 bg-white black tracked">
+<body class="avenir fw6 bg-white black">
   <header class="w-100 fixed z-max">
     <div class="mw9 ph4-l cf">
       <h1 class="w-100 fl mb0 f3-l f4 mt4 fw9 tc" style="font-family: 'DrukWide-Bold', Helvetica, Sans-serif; font-size:4.5rem;"><a href="index.html" class="link white" >BELLA MCGOLDRICK</a></h1>
@@ -33,7 +51,7 @@
     </div>
   </header>
   <div class="mw12 center">
-    <main class="cf relative z-1">
+    <main class="cf relative z-1 tracked">
 
       <!--<div class="cf">
         <article class="w-100 fl">
@@ -53,40 +71,70 @@
 
       <div class="mw8-ns center mw12 cf pt6 pb6">
         <section class="w-100 cf pr4-ns pr3 pl4-ns pl3">
-          <p class="f2-ns f4 tl lh-copy black tc">Bella McGoldrick is an Australian designer and illustrator living in New York City.</p>
+          <p class="f2-ns f3 tl lh-copy black tc">Bella is an Australian designer and illustrator</br> living in New&nbsp;York&nbsp;City.</p>
         </section>
       </div>
 
-      <div class="cf">
+      <div class="flex flex-wrap">
+        <article class="w-50-ns w-100">
+          <div class="aspect-ratio aspect-ratio--1x1">
+            <a class="flex items-center justify-center aspect-ratio--object cover link white bg-fade-photo" href="fashion" style="background :url(http://bella.gold/img/fashion/fashion-cover.jpg) no-repeat center center">
+              <p class="f3 white mv0 z-1">Fashion Design.</p>
+            </a>
+          </div>
+        </article>
+        <article class="w-50-ns w-100">
+          <div class="aspect-ratio aspect-ratio--1x1">
+            <a class="flex items-center justify-center aspect-ratio--object cover link white bg-fade-photo" href="illustration" style="background :url(http://bella.gold/img/illustration/illustration-cover-2.jpg) no-repeat left; background-size: 100% cover;">
+              <p class="f3 white mv0 z-1">Illustration.</p>
+            </a>
+          </div>
+        </article>
+      </div>
+
+
+      <!--<div class="cf">
         <article class="w-50-ns w-100 fl">
           <div class="aspect-ratio aspect-ratio--1x1 overflow-hidden">
-            <a class="dt tc aspect-ratio--object cover link white f2-ns f4" href="illustration.html" style="background:url(img/illustration/illustration-cover-2.jpg) no-repeat center center">
+            <a class="flex items-center justify-center aspect-ratio--object cover link white f2-ns f4" href="illustration.html" style="background:url(img/illustration/illustration-cover-2.jpg) no-repeat center center">
               <span class="dtc v-mid hover-bg-black bg-animate">Illustration.</span>
             </a>
           </div>
         </article>
         <article class="w-50-ns w-100 fl">
           <div class="aspect-ratio aspect-ratio--1x1 overflow-hidden">
-            <a class="dt tc aspect-ratio--object cover link white f2-ns f4" href="fashion.html" style="background:url(img/fashion/fashion-cover.jpg) no-repeat center center">
-              <span class="dtc v-mid hover-bg-black bg-animate">Fashion Design.</span>
+            <a class="flex items-center justify-center tc aspect-ratio--object cover link white f2-ns f4 hover-bg-black" href="fashion" style="background:url(img/fashion/fashion-cover.jpg) no-repeat center center">
+              <span class="dtc v-mid  bg-animate">Fashion Design.</span>
             </a>
           </div>
         </article>
-      </div>
+      </div>-->
 
-      <article class="cf">
-        <div class="fl w-100 tc mb0-ns">
+      
+
+     <!-- <article class="cf">
+        <div class="fl w-100 tc mt6">
           <div class="aspect-ratio aspect-ratio--16x9-ns aspect-ratio--1x1">
               <div class="aspect-ratio--object cover" style="background:url(img/profile.jpg) center;"></div>
           </div>
         </div>
-      </article>
+      </article>-->
 
 
-      <div class="mw12 cf mb6-ns mb3 mt6-ns mt5 pl0-ns">
-        <p class="w-third-ns fl-ns mb0-ns mb5 f4 black link tc" ><a href="mailto:b.mcgoldrick@me.com" class="link black dim">b.mcgoldrick@me.com</a></p>
-        <p class="w-third-ns fl-ns mb0-ns mb5 f4 black link tc"><a href="" class="link black dim">+1 929 217 9681</a></p>
-        <p class="w-third-ns fl-ns mb0-ns mb5 f4 black link tc"><a href="http://instagram.com/bellamcgoldrick" class="link black dim">Instagram</a></p>
+    <div class="mw12 cf mb6-ns mb3 mt6-ns mt5 pl0-ns">
+      <p class="w-third-ns fl-ns mb0-ns mb5 f4 black link tc" ><a href="mailto:b.mcgoldrick@me.com" class="link black dim">b.mcgoldrick@me.com</a></p>
+      <p class="w-third-ns fl-ns mb0-ns mb5 f4 black link tc"><a href="" class="link black dim">+1 929 217 9681</a></p>
+      <p class="w-third-ns fl-ns mb0-ns mb5 f4 black link tc"><a href="http://instagram.com/bellamcgoldrick" class="link black dim">Instagram</a></p>
+    </div>
+
+    <div class="flex flex-wrap">
+        <article class="w-100-ns w-100">
+          <div class="aspect-ratio aspect-ratio--16x9">
+            <a class="flex items-center justify-center aspect-ratio--object cover link white bg-fade-photo" href="about" style="background :url(http://bella.gold/img/profile.jpg) no-repeat center center">
+              <p class="f3 white mv0 z-1">About.</p>
+            </a>
+          </div>
+        </article>
       </div>
 
     </main>
